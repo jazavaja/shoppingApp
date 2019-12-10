@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="enter_logo">70dp</dimen>
+    <dimen name="left_right_margin">15dp</dimen>
+    <dimen name="sizeLong">14sp</dimen>
+    <dimen name="sizeShort">16sp</dimen>
+
+    <dimen name="storyCircle">60dp</dimen>
+    <dimen name="storyCircleMargin">3dp</dimen>
+    <dimen name="storyLinearHeight">85dp</dimen>
+    <dimen name="LinearHeight">140dp</dimen>
+    <dimen name="margin">7dp</dimen>
+    <dimen name="margin_one">3dp</dimen>
+
+    <dimen name="heightItemSearch">100dp</dimen>
+    <dimen name="img_logo">25dp</dimen>
+    <dimen name="image_item">80dp</dimen>
+
+    <dimen name="anchor_point">300dp</dimen>
+    <dimen name="bottom_sheet_peek_height">0dp</dimen>
+
+    <dimen name="text_size_circular_small">16dp</dimen>
+
+
+
+    <dimen name="images">40dp</dimen>
+    <dimen name="images_large">60dp</dimen>
+
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+
+    <dimen name="text_size_edit_form">17dp</dimen>
+
+    <dimen name="dimen_hexongal">90dp</dimen>
+    <dimen name="dimen_hexongal_half">45dp</dimen>
+    <dimen name="dimen_hexongal_center">90dp</dimen>
+
+    <dimen name="d">120dp</dimen>
+    <dimen name="dimen_hexongal_large">120dp</dimen>
+    <dimen name="dimen_hexongal_half_large">60dp</dimen>
+    <dimen name="dimen_hexongal_center_large">120dp</dimen>
+
+    <dimen name="dimen_left_right_margin_txt">10dp</dimen>
+</resources>

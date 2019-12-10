@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="پاک کردن همه فیلترها"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="محدوده قیمت:"
+                android:textSize="16sp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorGreenBlue"
+                android:layout_marginRight="10dp"/>
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                app:corner_radius="10"
+                app:min_value="0"
+                app:max_value="100"
+                app:left_thumb_color="@color/colorBlue"
+                app:right_thumb_color="@color/colorBlue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="انتخاب دسته بندی:"
+                android:textSize="16sp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorGreenBlue"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="لبنیات"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="سوپر مارکت"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تره بار"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="پوشاک"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="محصولات رژیمی"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="کفش و زیورآلات"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="آرایشی بهداشتی"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="لوازم خانگی"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ویژه کودک"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ورزشی"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="بیمه"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="کالا دیجیتال"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="کتاب و لوازم التحریر"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="کالای خانه و خواب"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تورهای مسافرتی"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="حیوانات خانگی"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="گل وگیاه"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="آزایشگاه"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="محصولات فرهنگی"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="لوازم خودرو"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ابزار آلات"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تعمیرگاه ها"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="زیبایی و پزشکی"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="باشگاه مشتریان"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="املاک"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="خدماتی"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="باشگاه ها و موسسات ورزشی"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تولیدی"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="رستوران"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="کیک و شیرینی"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="دکوراسیون و تزئینات"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="طلا و نقره"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="هنر"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="استخدام"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="وسایل نقلیه و خودرو"
+                        android:layout_gravity="left"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/colorGreenBlue"
+                        android:buttonTint="@color/colorGreenBlue"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="فقط نمایش کالاهای موجود"
+                    android:textSize="15sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorGreenBlue"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/txt"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مرتب سازی براساس:"
+                android:textSize="16sp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorGreenBlue"
+                android:layout_marginRight="10dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ارزان ترین"
+                    android:layout_gravity="left"
+                    android:layoutDirection="rtl"
+                    android:textColor="@color/colorGreenBlue"
+                    android:buttonTint="@color/colorGreenBlue" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="گران ترین"
+                    android:layout_gravity="center"
+                    android:layoutDirection="rtl"
+                    android:textColor="@color/colorGreenBlue"
+                    android:buttonTint="@color/colorGreenBlue"/>
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="جدید ترین"
+                    android:layout_gravity="right"
+                    android:layoutDirection="rtl"
+                    android:textColor="@color/colorGreenBlue"
+                    android:buttonTint="@color/colorGreenBlue" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

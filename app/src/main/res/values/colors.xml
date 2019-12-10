@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#763fb5</color>
+    <color name="colorPrimaryDark">#4f1f6b</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#7b7b7b</color>
+    <color name="colorBlue">#0d1974</color>
+    <color name="colorHeader">#3b5b9c</color>
+    <color name="colorGreen">#057c7e</color>
+    <color name="colorGreenBlue">#05667e</color>
+
+    <color name="colorRed">#d60700</color>
+    <color name="colorOrange">#d77900</color>
+
+    <color name="colorBlueSpecial">#297aff</color>
+    <color name="colorOrangeDark">#8b4e00</color>
+
+    <color name="colorBottomBarUnselect">#ababab</color>
+    <color name="colorBottomBarSelect">#000000</color>
+
+    <color name="dialog_background_scrim">#6f323232</color>
+
+    <color name="range_seekbar">#004759</color>
+    <color name="OpacityWhiteColor">#FFF</color>
+</resources>

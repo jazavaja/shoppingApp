@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Insta</string>
+    <string name="MergedAppBarLayoutBehavior">com.javad.shopgram.menuLibs.MergedAppBarLayoutBehavior</string>
+    <string name="BottomSheetBehaviorGoogleMapsLike">com.javad.shopgram.menuLibs.BottomSheetBehaviorGoogleMapsLike</string>
+    <string name="BackDropBottomSheetBehavior">com.javad.shopgram.menuLibs.BackdropBottomSheetBehavior</string>
+    <string name="ScrollingAppBarLayoutBehavior">com.javad.shopgram.menuLibs.ScrollingAppBarLayoutBehavior</string>
+    <string name="nameApp">اینستاگرام</string>
+    <string name="Describe">به دنیای جدید کسب و کارهای ایران خوش آمدید</string>
+    <string name="phone">تلفن همراه</string>
+    <string name="password">کد تایید</string>
+    <string name="failedMessage">عملیات ناموفق بود</string>
+    <string name="login">ورود</string>
+    <string name="login_guest">ورود به عنوان مهمان</string>
+    <string name="modelGetSellerStories">فروشندگان</string>
+    <string name="basketBuy">سبد خرید</string>
+    <string name="users">کاربران</string>
+
+</resources>

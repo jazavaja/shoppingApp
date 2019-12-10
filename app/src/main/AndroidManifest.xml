@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.javad.shopgram">
+    <uses-permission android:name="android.permission.RECEIVE_SMS">
+
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS">
+
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:overrideLibrary="com.race604.drawable"
+        android:theme="@style/AppThemeMain"
+        tools:replace="android:supportsRtl">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".Login">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignIn"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <receiver android:name=".service.IncomingMessage"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name=".DetailsProductActivity">
+
+        </activity>
+        <activity android:name=".SellerPageUser" />
+        <activity android:name=".FinainzePayment" />
+        <activity android:name=".Payment" />
+        <activity android:name=".ProductCategory" />
+        <activity android:name=".sellerApp.MainSeller"/>
+        <!--<activity android:name=".SellerApp.MainSeller" />-->
+    </application>
+
+</manifest>
